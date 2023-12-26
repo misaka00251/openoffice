@@ -89,6 +89,9 @@ else
         mips-*-linux*)
             . ./LinuxMIPSEnv.Set.sh
         ;;
+        riscv*-*-linux*)
+            . ./LinuxRISCVEnv.Set.sh
+        ;;
         i386-*-freebsd*)
             . ./FreeBSDX86Env.Set.sh
         ;;
