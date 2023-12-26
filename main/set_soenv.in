@@ -607,6 +607,17 @@ elsif ( $platform =~ m/linux/ )
       $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."arm".$ds."native_threads";
       $EPM_FLAGS      = "-a arm";
    }
+   elsif ($platform =~ m/^riscv.*?l-/)
+   {  print "Setting Linux RISCV specific values... ";
+      $outfile        = "LinuxRISCVEnv.Set"; 
+      $CPU            = "V";
+      $CPUNAME        = "RISCV";
+      $OUTPATH        = "unxlngv";
+      $JRELIBDIR      = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."riscv";
+      $JRETOOLKITDIR  = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."riscv".$ds."server";
+      $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."riscv".$ds."native_threads";
+      $EPM_FLAGS      = "-a riscv64";
+   }
    elsif ($platform =~ m/^mips/)
    {  print "Setting Linux MIPS specific values... ";
       $outfile        = "LinuxMIPSEnv.Set"; 
