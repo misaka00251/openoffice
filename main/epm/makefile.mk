@@ -41,8 +41,8 @@ TARGET=epm
 
 .IF "$(GUI)"=="UNX"
 
-# Download from https://github.com/misaka00251/epm/archive/refs/tags/v5.0.0.1.tar.gz
-TARFILE_NAME=v5.0.0.1
+# Download from https://github.com/misaka00251/epm/archive/v5.0.0.1/epm-5.0.0.1.tar.gz
+TARFILE_NAME=epm-5.0.0.1
 TARFILE_MD5=3dc5cd542a0f6aeffc3d604165839f65
 
 CONFIGURE_ACTION=.$/configure
