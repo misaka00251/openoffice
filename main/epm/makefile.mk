@@ -41,8 +41,9 @@ TARGET=epm
 
 .IF "$(GUI)"=="UNX"
 
-TARFILE_NAME=epm-5.0.0
-TARFILE_MD5=8ce02a315807bd406b5de85ccf63e7fb
+# Download from https://github.com/misaka00251/epm/archive/refs/tags/v5.0.0.1.tar.gz
+TARFILE_NAME=v5.0.0.1
+TARFILE_MD5=3dc5cd542a0f6aeffc3d604165839f65
 
 CONFIGURE_ACTION=.$/configure
 CONFIGURE_FLAGS=--disable-fltk
