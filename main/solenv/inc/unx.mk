@@ -168,6 +168,10 @@
 .INCLUDE : unxlngm68k.mk
 .ENDIF
 
+.IF "$(OS)$(CPU)" == "LINUXV64"
+.INCLUDE : unxlngv64.mk
+.ENDIF
+
 .IF "$(OS)$(CPU)" == "LINUXH"
 .INCLUDE : unxlnghppa.mk
 .ENDIF

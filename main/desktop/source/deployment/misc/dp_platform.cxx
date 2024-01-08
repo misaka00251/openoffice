@@ -50,7 +50,7 @@
 #define PLATFORM_LINUX_S390x        "linux_s390x"
 #define PLATFORM_LINUX_HPPA         "linux_hppa"
 #define PLATFORM_LINUX_ALPHA        "linux_alpha"
-
+#define PLATFORM_LINUX_RISCV64      "linux_riscv64"
 
 
 #define PLATFORM_SOLARIS_SPARC      "solaris_sparc"

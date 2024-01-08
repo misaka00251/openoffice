@@ -67,9 +67,11 @@ namespace jfw_plugin
 #define JFW_PLUGIN_ARCH "parisc"
 #elif defined AXP
 #define JFW_PLUGIN_ARCH "alpha"
-#else // SPARC, INTEL, POWERPC, MIPS, ARM, IA64, M68K, HPPA, ALPHA
+#elif defined RISCV64
+#    define THIS_ARCH "RISCV64"
+#else // SPARC, INTEL, POWERPC, MIPS, ARM, IA64, M68K, HPPA, ALPHA, RISCV64
 #error unknown platform
-#endif // SPARC, INTEL, POWERPC, MIPS, ARM, IA64, M68K, HPPA, ALPHA
+#endif // SPARC, INTEL, POWERPC, MIPS, ARM, IA64, M68K, HPPA, ALPHA, RISCV64
 
 
 class MalformedVersionException
